@@ -1,0 +1,13 @@
+title: TableOfContents
+created: 20250625121919441
+modified: 2025-06-25T16:06:11.276Z
+tags: $:/tags/SideBar
+type: text/vnd.tiddlywiki
+caption: Contents
+list-before: $:/core/ui/SideBar/Open
+
+<div class="tc-table-of-contents">
+
+<<toc-selective-expandable 'TableOfContents'>>
+
+</div>

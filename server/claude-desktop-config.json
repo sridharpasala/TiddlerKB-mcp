@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "tiddlywiki": {
+      "command": "node",
+      "args": ["/Users/sridharpasala/Documents/CodeRepo/GitHub/Blendcepts/MyTiddlyKB/server/dist/index.js"],
+      "env": {
+        "TIDDLYWIKI_PATH": "/Users/sridharpasala/Documents/CodeRepo/GitHub/Blendcepts/MyTiddlyKB/tests"
+      }
+    }
+  }
+}

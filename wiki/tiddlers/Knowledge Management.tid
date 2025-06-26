@@ -1,0 +1,28 @@
+title: Knowledge Management
+created: 2025-06-25T16:43:35.077Z
+modified: 2025-06-25T16:43:35.077Z
+tags: TableOfContents
+type: text/vnd.tiddlywiki
+
+! Knowledge Management
+
+Abstract concept representing systems and practices for organizing, storing, and retrieving knowledge.
+
+!! Domain Coverage
+* Personal Knowledge Management
+* Information Architecture
+* Content Organization
+* Learning Systems
+
+!! Related Concepts
+* Information Science
+* Cognitive Systems
+* Documentation Practices
+
+---
+
+<div class="tc-table-of-contents">
+
+<<toc-selective-expandable 'Knowledge Management'>>
+
+</div>

@@ -1,0 +1,105 @@
+title: Jurisdiction Filing Strategy
+created: 2025-06-25T12:14:26.192Z
+modified: 2025-06-25T16:41:23.849Z
+tags: [[Patent Strategy]]
+type: text/vnd.tiddlywiki
+
+!! United States 🇺🇸 - Priority Filing
+
+''Advantages:''
+* ✅ Strong software patent protection
+* ✅ First-to-file system
+* ✅ Broad claim interpretation
+* ✅ Strong enforcement mechanisms
+
+''Filing Strategy:''
+# **Provisional Patent Application** (12-month priority period)
+#* Cost: $1,600-3,200 (small entity)
+#* Timeline: File within 6 months of public disclosure
+#* Strategy: File broad provisional covering all core innovations
+# **Non-Provisional Application**
+#* Cost: $8,000-15,000 per application (with attorney fees)
+#* Timeline: Within 12 months of provisional
+#* Strategy: File 3-4 focused applications covering core innovations
+
+''Key Considerations:''
+* Emphasize technical solutions to technical problems
+* Include detailed technical architecture diagrams
+* Focus on specific algorithms and data structures
+* Avoid abstract ideas - emphasize concrete implementations
+
+---
+
+!! India 🇮🇳 - Strategic Market Protection
+
+''Advantages:''
+* ✅ Large developer market
+* ✅ Growing software industry
+* ✅ Recent improvements in IP enforcement
+* ✅ Lower filing costs
+
+''Challenges:''
+* ⚠️ Section 3(k) exclusion of computer programs "per se"
+* ⚠️ Higher bar for software patent eligibility
+* ⚠️ Need to demonstrate technical effect beyond software
+
+''Filing Strategy:''
+# **Direct Filing or PCT National Phase**
+#* Cost: ₹1,60,000-4,00,000 per application
+#* Timeline: 18 months from US priority date (if PCT route)
+# **Claim Drafting Strategy:**
+#* Emphasize hardware implementations
+#* Focus on technical effects and improvements
+#* Include system claims with specific technical architectures
+#* Demonstrate technical advancement over prior art
+
+''India-Specific Tips:''
+* Emphasize technical effect on computer system performance
+* Include specific hardware configurations
+* Focus on novel technical architectures
+* Demonstrate industry applicability
+
+---
+
+!! European Union 🇪🇺 - Broad Market Coverage
+
+''Filing Strategy:''
+# **EP Application via PCT**
+#* Cost: €15,000-25,000 per application
+#* Coverage: Validate in key countries (Germany, France, UK, Netherlands)
+# **Technical Focus Areas:**
+#* Computer-implemented inventions with technical character
+#* Specific technical solutions to technical problems
+#* Non-obvious technical effects
+
+---
+
+!! China 🇨🇳 - Manufacturing & Market Access
+
+''Strategic Importance:''
+* Large developer market
+* Growing enterprise software adoption
+* Important for global patent landscape
+
+''Filing Timeline:'' Within 12 months of US priority
+
+---
+
+!! Japan 🇯🇵 - Technology Innovation Hub
+
+''Strategic Value:''
+* Advanced software development market
+* Strong IP enforcement
+* Technical examination standards
+
+---
+
+!! Other Key Markets
+
+''Additional Considerations:''
+* **South Korea** - Strong tech market
+* **Canada** - North American coverage
+* **Australia** - Asia-Pacific presence
+* **Singapore** - ASEAN hub
+
+''Filing Strategy:'' PCT route provides cost-effective coverage for most markets

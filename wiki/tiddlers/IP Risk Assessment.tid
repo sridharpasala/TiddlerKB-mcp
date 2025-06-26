@@ -1,0 +1,119 @@
+title: IP Risk Assessment
+created: 2025-06-25T12:15:05.377Z
+modified: 2025-06-25T16:41:43.746Z
+tags: [[Patent Strategy]]
+type: text/vnd.tiddlywiki
+
+!! High-Risk Areas
+
+!!! 1. Abstract Ideas Rejection (US)
+''Risk:'' Claims may be rejected as abstract ideas under Alice/Mayo framework
+
+''Mitigation Strategies:''
+* Focus on specific technical implementations
+* Emphasize concrete technical solutions
+* Include detailed system architectures
+* Demonstrate technical advantages with metrics
+
+---
+
+!!! 2. Software Patent Exclusions (India)
+''Risk:'' Section 3(k) exclusion of computer programs per se
+
+''Mitigation Strategies:''
+* Emphasize technical effects and hardware implementations
+* Focus on system-level innovations
+* Demonstrate technical advancement
+* Include hardware-software integration claims
+
+---
+
+!!! 3. Prior Art in AI/Automation Space
+''Risk:'' Extensive prior art in AI and software automation
+
+''Mitigation Strategies:''
+* Comprehensive prior art analysis
+* Focus on specific technical combinations
+* Emphasize novel architectural approaches
+* Document technical advantages and improvements
+
+---
+
+!! Freedom to Operate Considerations
+
+!!! Critical Areas to Investigate:
+* **Knowledge graph implementations** (Neo4j, Amazon Neptune patents)
+* **Multi-agent AI systems** (existing academic and commercial patents)
+* **Software testing automation** (extensive prior art landscape)
+* **CI/CD pipeline automation** (DevOps tool patents)
+
+!!! Recommended Actions:
+* Professional FTO analysis before market entry
+* Design-around strategies for blocking patents
+* Licensing negotiations where necessary
+* Patent landscaping in core technology areas
+
+---
+
+!! Alternative IP Protection Strategies
+
+!!! Trade Secrets Protection
+
+''High-Value Candidates:''
+* ✅ Specific AI model architectures and training data
+* ✅ Performance optimization algorithms
+* ✅ Proprietary prompt engineering techniques
+* ✅ Customer-specific customization algorithms
+
+''Protection Measures:''
+* Employee confidentiality agreements
+* Compartmentalized development
+* Secure development environments
+* Regular IP training
+
+---
+
+!!! Copyright Protection
+
+''Automatic Protection For:''
+* ✅ Source code implementations
+* ✅ Documentation and user manuals
+* ✅ Architectural diagrams and specifications
+* ✅ Training materials and methodologies
+
+''Enhancement Strategies:''
+* Copyright registration in key markets
+* Clear authorship documentation
+* Version control with timestamps
+* License management framework
+
+---
+
+!!! Trademark Strategy
+
+''Brand Protection:''
+* **"RobustAI"** - Core platform brand
+* **"Living Blueprint"** - Key technology feature
+* **Descriptive taglines** - "Engineering Automated with AI"
+
+''Filing Strategy:''
+* **Class 42**: Software development services, SaaS platforms
+* **Class 9**: Computer software, downloadable applications
+* **Priority Markets**: US, EU, IN, CN, JP
+
+---
+
+!! Risk Monitoring
+
+!!! Ongoing Activities:
+* Quarterly patent landscape monitoring
+* Competitor patent filing analysis
+* Technology trend tracking
+* IP litigation monitoring
+* Freedom to operate updates
+
+!!! Early Warning Systems:
+* Patent alert services
+* Competitor activity monitoring
+* Technology conference intelligence
+* Academic research tracking

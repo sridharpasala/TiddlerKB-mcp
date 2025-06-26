@@ -1,0 +1,24 @@
+title: Claude Desktop Configuration
+created: 2025-06-25T12:56:39.119Z
+modified: 2025-06-25T16:40:47.342Z
+tags: [[Software Engineering]]
+type: text/vnd.tiddlywiki
+
+! 💻 Claude Desktop Configuration
+
+//This tiddler was referenced from [[TechnicalNotes/MCP]] but needs content.//
+
+!! Configuration Steps
+- MCP server setup
+- Desktop app integration
+- Authentication configuration
+- Connection testing
+
+!! Requirements
+- Claude Desktop application
+- MCP server running
+- Proper port configuration
+- Network access permissions
+
+---
+*Referenced from: [[TechnicalNotes/MCP]]*

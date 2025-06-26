@@ -1,0 +1,21 @@
+title: Software Engineering
+created: 20250101000000000
+modified: 2025-06-25T16:42:50.397Z
+tags: [[Technology Development]]
+type: text/vnd.tiddlywiki
+
+! Software Engineering
+
+Systematic approach to software development, including protocols, integrations, and architectures.
+
+!! Core Areas
+* Protocol Development
+* System Integration
+* API Design
+* Architecture Patterns
+
+<div class="tc-table-of-contents">
+
+<<toc-selective-expandable 'Software Engineering'>>
+
+</div>

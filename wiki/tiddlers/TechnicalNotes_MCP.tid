@@ -1,0 +1,49 @@
+title: TechnicalNotes/MCP
+created: 20240625100000000
+modified: 2025-06-25T16:40:54.987Z
+tags: [[Software Engineering]]
+type: text/vnd.tiddlywiki
+
+! Model Context Protocol (MCP) Technical Notes
+
+!! Overview
+MCP is a protocol that enables seamless integration between AI models and external tools/services.
+
+!! Key Components
+
+!!! Server
+* Implements tool definitions
+* Handles tool execution requests
+* Manages state and resources
+
+!!! Transport
+* STDIO-based communication
+* JSON-RPC protocol
+* Bidirectional message flow
+
+!!! Tools
+* Defined with schemas (using Zod)
+* Input validation
+* Structured output format
+
+!! Implementation Notes
+
+```javascript
+// Basic tool structure
+const toolDefinition = {
+  name: 'tool_name',
+  description: 'What this tool does',
+  inputSchema: zodSchema,
+};
+```
+
+!! Best Practices
+# Keep tool operations atomic
+# Validate all inputs
+# Provide clear error messages
+# Use descriptive tool names
+
+!! Related Topics
+* [[TiddlyWiki Integration]]
+* [[Claude Desktop Configuration]]
+* [[API Design Patterns]]

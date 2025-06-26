@@ -1,0 +1,50 @@
+title: ResearchNotes/KnowledgeManagement
+created: 20240620120000000
+modified: 2025-06-25T16:41:08.907Z
+tags: [[Personal Knowledge Management]]
+type: text/vnd.tiddlywiki
+
+! Knowledge Management Research
+
+!! Definition
+Knowledge Management (KM) is the process of creating, sharing, using and managing the knowledge and information of an organization or individual.
+
+!! Personal Knowledge Management (PKM)
+PKM focuses on individual knowledge workers and their personal information management strategies.
+
+!!! Core Activities
+* ''Capture'': Recording information and ideas
+* ''Organize'': Structuring and categorizing knowledge
+* ''Process'': Analyzing and synthesizing information
+* ''Connect'': Linking related concepts
+* ''Share'': Disseminating knowledge
+
+!! Tools and Techniques
+
+!!! Digital Tools
+* [[TiddlyWiki]] - Non-linear personal wiki
+* Obsidian - Graph-based note-taking
+* Notion - All-in-one workspace
+* Roam Research - Bi-directional linking
+
+!!! Methodologies
+* Zettelkasten method
+* PARA method (Projects, Areas, Resources, Archives)
+* GTD (Getting Things Done)
+* Mind mapping
+
+!! AI Enhancement Opportunities
+* Automated tagging and categorization
+* Content summarization
+* Relationship discovery
+* Knowledge gap identification
+* Smart search and retrieval
+
+!! References
+# Nonaka, I. (1994). "A Dynamic Theory of Organizational Knowledge Creation"
+# Davenport, T. H. (1994). "Saving IT's Soul: Human-Centered Information Management"
+
+!! See Also
+* [[ProjectIdeas]]
+* [[TechnicalNotes/MCP]]
+* [[Information Architecture]]

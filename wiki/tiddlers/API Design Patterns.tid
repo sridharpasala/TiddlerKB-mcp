@@ -1,0 +1,24 @@
+title: API Design Patterns
+created: 20250101000000000
+modified: 2025-06-25T16:40:44.314Z
+tags: [[Software Engineering]]
+type: text/vnd.tiddlywiki
+
+! 🏗️ API Design Patterns
+
+//This tiddler was referenced from [[TechnicalNotes/MCP]] but needs content.//
+
+!! Common Design Patterns
+- RESTful API principles
+- Event-driven architecture
+- Request-response patterns
+- Error handling strategies
+
+!! MCP-Specific Patterns
+- Tool registration patterns
+- Resource management
+- Protocol compliance
+- State management
+
+---
+*Referenced from: [[TechnicalNotes/MCP]]*

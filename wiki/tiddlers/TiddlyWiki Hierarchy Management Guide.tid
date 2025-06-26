@@ -1,0 +1,158 @@
+title: TiddlyWiki Hierarchy Management Guide
+created: 2025-06-25T16:50:37.234Z
+modified: 2025-06-25T16:50:37.234Z
+tags: [[Knowledge Management]]
+type: text/vnd.tiddlywiki
+
+! 🏗️ TiddlyWiki Hierarchy Management Guide
+
+Comprehensive prompt and procedures for maintaining clean ontological structure in TiddlyWiki.
+
+## 📋 Core Hierarchy Principles
+
+### **Three-Tier Root Structure**
+Only these concepts should have `TableOfContents` tag:
+1. **Business Strategy** - All strategic business activities
+2. **Technology Development** - All technical development and engineering
+3. **Knowledge Management** - All information and knowledge systems
+
+### **Tagging Rules**
+* **Root Level**: Only 3 concepts tagged with `["TableOfContents"]`
+* **Domain Level**: Tagged with their parent root concept
+* **Specialized Level**: Tagged with their parent domain concept  
+* **Implementation Level**: Tagged with their specialized parent
+
+---
+
+## 🤖 AI Assistant Prompt for Hierarchy Cleanup
+
+```
+TIDDLYWIKI HIERARCHY MANAGEMENT PROTOCOL
+
+When adding new tiddlers or reorganizing content, follow this ontological structure:
+
+### STEP 1: IDENTIFY DOMAIN
+Analyze the tiddler content and classify into one of three root domains:
+- **Business Strategy** → Strategic planning, IP, market analysis, financial planning
+- **Technology Development** → Software engineering, technical documentation, development tools
+- **Knowledge Management** → PKM, research, daily operations, information organization
+
+### STEP 2: DETERMINE HIERARCHY LEVEL
+Place content at appropriate level:
+- **Level 1 (Root)**: Abstract domain concepts only - tagged `["TableOfContents"]`
+- **Level 2 (Domain)**: Broad subject areas - tagged with root concept name
+- **Level 3 (Specialized)**: Specific disciplines - tagged with domain parent
+- **Level 4 (Implementation)**: Concrete content - tagged with specialized parent
+
+### STEP 3: TAG ASSIGNMENT
+Apply ONLY the immediate parent tag:
+❌ WRONG: `["TableOfContents", "Business Strategy", "Patent Strategy"]`
+✅ CORRECT: `["Patent Strategy"]`
+
+### STEP 4: TOC STRUCTURE
+For any tiddler that has child tiddlers, add this structure at the bottom:
+
+```html
+---
+
+<div class="tc-table-of-contents">
+
+<<toc-selective-expandable 'TiddlerName'>>
+
+</div>
+```
+
+### STEP 5: VALIDATION CHECKLIST
+- [ ] Only 3 root concepts tagged with `TableOfContents`
+- [ ] Each tiddler has exactly one parent tag
+- [ ] Parent tiddlers have TOC structure
+- [ ] No orphaned tiddlers (all content has logical parent)
+- [ ] Hierarchy depth doesn't exceed 4 levels
+
+### STEP 6: CONTENT STRUCTURE
+Follow Wikipedia-style organization:
+- Clear heading structure with `!`, `!!`, `!!!`
+- Link to related concepts with `[[TiddlerName]]`
+- Include navigation sections for parent tiddlers
+- Add "Related" sections for cross-references
+
+### COMMON MISTAKES TO AVOID
+❌ Tagging with `TableOfContents` for non-root concepts
+❌ Multiple parent tags on single tiddler
+❌ Creating orphaned content without proper hierarchy
+❌ Using transclusion `{{TiddlerName}}` instead of links `[[TiddlerName]]`
+❌ Inconsistent TOC structure across parent tiddlers
+❌ Deep nesting beyond 4 levels
+
+### EXAMPLE HIERARCHY
+```
+Business Strategy [TableOfContents]
+├── Intellectual Property [Business Strategy]
+│   ├── Patent Strategy [Intellectual Property]
+│   │   ├── IP Strategy Dashboard [Patent Strategy]
+│   │   ├── Patent Portfolio Analysis [Patent Strategy]
+│   │   └── Global Filing Strategy [Patent Strategy]
+│   └── Financial Planning [Intellectual Property]
+│       ├── Investment Planning [Financial Planning]
+│       └── Budget Analysis [Financial Planning]
+```
+```
+
+---
+
+## 🔧 Quick Reference Commands
+
+### For AI Assistants:
+When restructuring hierarchy, use these TiddlyWiki functions:
+- `tiddlywiki:update_tiddler` - Fix tagging
+- `tiddlywiki:create_tiddler` - Add missing parent concepts
+- `tiddlywiki:list_tiddlers` - Audit current structure
+- `tiddlywiki:analyze_connections` - Check relationships
+
+### Validation Queries:
+- List all root concepts: Search for tiddlers tagged with `TableOfContents`
+- Find orphaned content: Search for tiddlers with multiple parent tags
+- Check TOC consistency: Verify all parent tiddlers have expandable TOC
+
+---
+
+## 📊 Hierarchy Health Metrics
+
+### Green Status ✅
+- Exactly 3 root concepts with `TableOfContents` tag
+- All tiddlers have single parent tag
+- All parent tiddlers have TOC structure
+- Clear conceptual organization
+
+### Yellow Status ⚠️
+- 1-2 incorrectly tagged tiddlers
+- Missing TOC structure on some parents
+- Minor organizational inconsistencies
+
+### Red Status 🚨
+- Multiple root concepts incorrectly tagged
+- Orphaned tiddlers without proper parents
+- Broken hierarchy with circular dependencies
+- Missing or inconsistent TOC structures
+
+---
+
+## 🎯 Maintenance Schedule
+
+### Weekly Review
+- [ ] Check for new tiddlers without proper parent tags
+- [ ] Verify TOC structure on all parent tiddlers
+- [ ] Update hierarchy as content evolves
+
+### Monthly Audit
+- [ ] Run full hierarchy validation
+- [ ] Reorganize content that has grown beyond current structure
+- [ ] Update this guide based on usage patterns
+
+---
+
+<div class="tc-table-of-contents">
+
+<<toc-selective-expandable 'TiddlyWiki Hierarchy Management Guide'>>
+
+</div>
