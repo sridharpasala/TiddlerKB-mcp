@@ -1,0 +1,212 @@
+title: AI Prompts - Test Model
+created: 2025-07-09T10:43:28.717Z
+modified: 2025-07-09T10:43:28.717Z
+tags: OOSE [[AI Prompts]] [[Test Model]] Templates
+type: text/vnd.tiddlywiki
+
+# AI Prompts for Test Model Generation
+
+## 1. Test Plan Generation
+
+```
+Create a comprehensive test plan:
+
+System: [SYSTEM_NAME]
+Requirements Model: [REQUIREMENTS_SUMMARY]
+Architecture: [ARCHITECTURE_TYPE]
+Timeline: [PROJECT_TIMELINE]
+Team Size: [TEAM_SIZE]
+
+Generate:
+1. Test strategy and approach
+2. Test levels (unit, integration, system, acceptance)
+3. Test types (functional, performance, security, usability)
+4. Entry and exit criteria
+5. Test environment requirements
+6. Resource allocation
+7. Risk assessment and mitigation
+8. Test schedule and milestones
+9. Defect management process
+10. Test metrics and reporting
+
+Format as a structured test plan document.
+```
+
+## 2. Unit Test Generation
+
+```
+Generate unit tests for the following class:
+
+Class Implementation: [CLASS_CODE]
+Programming Language: [LANGUAGE]
+Testing Framework: [JUNIT/PYTEST/NUNIT/etc]
+Coverage Target: [PERCENTAGE]
+
+Create tests for:
+1. Constructor(s)
+2. Each public method
+3. Edge cases and boundary conditions
+4. Error scenarios
+5. Business rule validation
+6. State transitions (if applicable)
+
+Include:
+- Test setup and teardown
+- Mock objects for dependencies
+- Assertions for all scenarios
+- Test documentation
+- Performance benchmarks (if relevant)
+```
+
+## 3. Integration Test Scenarios
+
+```
+Create integration tests for the following components:
+
+Component A: [COMPONENT_A_SPEC]
+Component B: [COMPONENT_B_SPEC]
+Integration Point: [INTEGRATION_DETAILS]
+Test Framework: [FRAMEWORK]
+
+Generate:
+1. Test scenarios covering all integration paths
+2. Data flow validation tests
+3. Error propagation tests
+4. Transaction boundary tests
+5. Performance tests for integration
+6. Security tests (authentication/authorization)
+7. Test data setup
+8. Environment configuration
+
+Output test code with setup/teardown procedures.
+```
+
+## 4. System Test Cases
+
+```
+Generate system test cases from use cases:
+
+Use Case: [USE_CASE_SPECIFICATION]
+Actors: [ACTOR_LIST]
+Pre-conditions: [PRECONDITIONS]
+Post-conditions: [POSTCONDITIONS]
+
+For each use case flow create:
+1. Test case ID and name
+2. Test objective
+3. Test data requirements
+4. Step-by-step test procedure
+5. Expected results for each step
+6. Pass/fail criteria
+7. Test priority (High/Medium/Low)
+
+Include:
+- Positive test cases
+- Negative test cases
+- Boundary test cases
+- Alternative flow tests
+```
+
+## 5. API Test Suite
+
+```
+Create API test suite:
+
+API Specification: [OPENAPI_SPEC]
+Test Tool: [POSTMAN/RESTASSURED/PYTEST/etc]
+Environment: [TEST_ENVIRONMENT]
+
+Generate tests for:
+1. Each endpoint (all HTTP methods)
+2. Request validation (required fields, data types)
+3. Response validation (status codes, schema)
+4. Authentication/Authorization scenarios
+5. Rate limiting tests
+6. Error response validation
+7. Performance benchmarks
+8. Security tests (injection, XSS, etc.)
+
+Output:
+- Test collection/suite
+- Environment variables
+- Test data files
+- Automated test scripts
+```
+
+## 6. Performance Test Scripts
+
+```
+Create performance test scripts:
+
+System: [SYSTEM_NAME]
+Performance Requirements: [NFR_PERFORMANCE]
+Tool: [JMETER/GATLING/LOCUST/etc]
+Target Load: [USER_LOAD_SPECS]
+
+Generate:
+1. Load test scenarios
+2. Stress test scenarios
+3. Spike test scenarios
+4. Endurance test scenarios
+5. User journey scripts
+6. Think time configurations
+7. Ramp-up/ramp-down patterns
+8. Monitoring points
+
+Include:
+- Test data generation
+- Result analysis criteria
+- Performance baselines
+- Bottleneck identification approach
+```
+
+## 7. Test Data Management
+
+```
+Design test data for the system:
+
+Database Schema: [SCHEMA]
+Test Scenarios: [SCENARIO_LIST]
+Data Relationships: [RELATIONSHIPS]
+Privacy Requirements: [PRIVACY_RULES]
+
+Generate:
+1. Test data categories (valid, invalid, boundary)
+2. Data generation scripts
+3. Data masking rules for sensitive information
+4. Test data refresh procedures
+5. Data volume specifications
+6. Referential integrity maintenance
+7. Environment-specific data sets
+
+Output:
+- SQL scripts for test data
+- Data generation utilities
+- Data cleanup scripts
+```
+
+## 8. Defect Report Template
+
+```
+Create a defect reporting template and examples:
+
+System: [SYSTEM_NAME]
+Defect Tracking Tool: [JIRA/BUGZILLA/etc]
+
+Include fields for:
+1. Defect ID (auto-generated)
+2. Summary/Title
+3. Description
+4. Steps to reproduce
+5. Expected vs Actual behavior
+6. Severity (Critical/High/Medium/Low)
+7. Priority
+8. Component/Module affected
+9. Version information
+10. Environment details
+11. Attachments (screenshots, logs)
+12. Assigned to
+13. Status workflow
+
+Provide 3 example defect reports for different severity levels.
+```

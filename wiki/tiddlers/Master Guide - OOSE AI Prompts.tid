@@ -1,0 +1,181 @@
+title: Master Guide - OOSE AI Prompts
+created: 2025-07-09T10:44:04.749Z
+modified: 2025-07-09T10:44:04.749Z
+tags: OOSE [[AI Prompts]] [[Process Guide]] [[Master Template]]
+type: text/vnd.tiddlywiki
+
+# Master Guide: Using AI Prompts for OOSE Model Generation
+
+## Overview
+
+This guide shows how to use the AI prompts in the correct sequence to generate all OOSE artifacts following the three-stage development process.
+
+## Stage 1: Analysis
+
+### Step 1.1: Generate Requirements Model
+
+1. **Start with Use Case Diagram**
+   - Use the system description to generate the overall use case diagram
+   - This gives you the big picture of actors and functionality
+
+2. **Create Actor Catalog**
+   - Based on the use case diagram, generate detailed actor descriptions
+   - This helps understand stakeholder needs
+
+3. **Detail Each Use Case**
+   - For each use case in the diagram, generate detailed specifications
+   - Include all flows, pre/post conditions, and business rules
+
+4. **Build Domain Model**
+   - Extract domain concepts from use cases
+   - Create the conceptual model showing entities and relationships
+
+5. **Define Non-Functional Requirements**
+   - Based on system type and use cases, generate NFRs
+   - These constrain the design decisions
+
+### Step 1.2: Generate Analysis Model
+
+1. **Identify Boundary Classes**
+   - For each use case and actor interaction, identify boundary classes
+   - These handle all external interactions
+
+2. **Create Control Classes**
+   - One control class per use case
+   - These coordinate the use case flow
+
+3. **Extract Entity Classes**
+   - Transform domain model concepts into entity classes
+   - Focus on behavior and responsibilities
+
+4. **Generate Sequence Diagrams**
+   - For each use case, show object interactions
+   - This validates the class responsibilities
+
+5. **Create Analysis Class Diagram**
+   - Show all boundary, control, and entity classes
+   - Include relationships and dependencies
+
+6. **Add State Diagrams**
+   - For entity classes with complex behavior
+   - Shows valid state transitions
+
+## Stage 2: Construction
+
+### Step 2.1: Generate Design Model
+
+1. **Refine to Design Classes**
+   - Add implementation details to analysis classes
+   - Include technology-specific elements
+
+2. **Design Database Schema**
+   - Transform entity classes to tables
+   - Add keys, indexes, and constraints
+
+3. **Create API Specifications**
+   - Design REST endpoints from boundary classes
+   - Define request/response formats
+
+4. **Apply Design Patterns**
+   - Identify where patterns solve design problems
+   - Show pattern implementation
+
+5. **Design Component Architecture**
+   - Group classes into deployable components
+   - Define interfaces and dependencies
+
+6. **Plan Deployment Architecture**
+   - Map components to infrastructure
+   - Include scaling and security
+
+### Step 2.2: Generate Implementation Model
+
+1. **Implement Classes**
+   - Generate code for each design class
+   - Include all business logic
+
+2. **Create Database Scripts**
+   - DDL for schema creation
+   - Migration and rollback scripts
+
+3. **Implement APIs**
+   - Controller/endpoint implementations
+   - Service layer code
+
+4. **Setup Configuration**
+   - Environment-specific settings
+   - Security and connection configs
+
+5. **Create Build Scripts**
+   - Compilation and packaging
+   - Deployment automation
+
+6. **Implement Integrations**
+   - External system connectors
+   - Error handling and retry logic
+
+## Stage 3: Testing
+
+### Step 3.1: Generate Test Model
+
+1. **Create Test Plan**
+   - Overall testing strategy
+   - Resource and timeline planning
+
+2. **Generate Unit Tests**
+   - Test each class in isolation
+   - Achieve coverage targets
+
+3. **Create Integration Tests**
+   - Test component interactions
+   - Validate data flow
+
+4. **Design System Tests**
+   - Test complete use cases
+   - End-to-end scenarios
+
+5. **Build API Test Suite**
+   - Test all endpoints
+   - Include security tests
+
+6. **Create Performance Tests**
+   - Load and stress testing
+   - Performance benchmarks
+
+7. **Prepare Test Data**
+   - Generate realistic test data
+   - Include edge cases
+
+## Prompt Chaining Strategy
+
+For best results, chain prompts by passing outputs as inputs:
+
+```
+1. System Description → Use Case Diagram
+2. Use Case Diagram → Actor Catalog + Use Case Specs
+3. Use Case Specs → Domain Model + Boundary Classes
+4. Domain Model → Entity Classes
+5. All Analysis Classes → Sequence Diagrams
+6. Analysis Model → Design Classes
+7. Design Classes → Implementation Code
+8. Implementation Code → Unit Tests
+9. Use Cases → System Test Cases
+```
+
+## Tips for Effective AI Prompt Usage
+
+1. **Provide Context**: Always include relevant context from previous models
+2. **Be Specific**: Include technology choices, constraints, and standards
+3. **Iterate**: Review and refine AI outputs before using them as inputs
+4. **Maintain Consistency**: Use consistent naming conventions throughout
+5. **Validate Relationships**: Ensure traceability between models
+6. **Review Business Logic**: Verify that requirements are correctly implemented
+
+## Quality Checkpoints
+
+After each model generation:
+- ✓ Completeness: Are all elements present?
+- ✓ Consistency: Do names and relationships match?
+- ✓ Correctness: Is the business logic accurate?
+- ✓ Traceability: Can you trace back to requirements?
+- ✓ Standards: Does it follow OOSE guidelines?

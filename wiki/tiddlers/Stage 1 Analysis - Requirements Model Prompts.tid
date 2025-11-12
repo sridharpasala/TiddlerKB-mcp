@@ -1,0 +1,203 @@
+title: Stage 1 Analysis - Requirements Model Prompts
+created: 2025-07-09T10:48:04.682Z
+modified: 2025-07-09T10:48:04.682Z
+tags: OOSE [[Analysis Stage]] [[Requirements Model]] [[Ready Prompts]]
+type: text/vnd.tiddlywiki
+
+# Stage 1: Analysis - Requirements Model Prompts
+
+## Prompt 1: Complete Use Case Model Generation
+
+```
+You are an expert requirements analyst specializing in OOSE methodology. Generate a complete Use Case Model for the following system:
+
+System Name: [SYSTEM_NAME]
+System Description: [SYSTEM_DESCRIPTION]
+Business Context: [BUSINESS_CONTEXT]
+User Types: [USER_TYPES]
+
+Generate the following artifacts:
+
+1. USE CASE DIAGRAM
+- Identify all actors (primary, secondary, external systems)
+- List 10-20 use cases based on system complexity
+- Show include/extend relationships
+- Define system boundary clearly
+- Output: PlantUML code
+
+2. ACTOR CATALOG
+For each actor provide:
+- Actor ID (ACT-XXX)
+- Actor Name
+- Type (Human/System/External)
+- Description
+- Responsibilities
+- Goals
+- Use cases they participate in
+- Special access requirements
+
+3. USE CASE SPECIFICATIONS
+For the top 5 critical use cases, provide:
+- Use Case ID (UC-XXX)
+- Use Case Name
+- Priority (High/Medium/Low)
+- Actors (Primary and Secondary)
+- Description (2-3 sentences)
+- Trigger
+- Preconditions
+- Main Flow (numbered steps)
+- Alternative Flows (at least 2)
+- Exception Flows
+- Postconditions
+- Business Rules
+- Non-functional Requirements
+- Frequency of Use
+- Special Requirements
+
+Format the output as:
+1. PlantUML diagram code
+2. Structured actor catalog (table or JSON)
+3. Detailed use case specifications
+
+Ensure all artifacts are consistent and traceable.
+```
+
+## Prompt 2: Domain Model and Business Rules
+
+```
+You are a domain modeling expert. Analyze the following business domain and create a comprehensive domain model:
+
+Domain: [DOMAIN_NAME]
+Business Description: [BUSINESS_DESCRIPTION]
+Key Business Processes: [PROCESS_LIST]
+Industry Constraints: [CONSTRAINTS]
+
+Generate:
+
+1. CONCEPTUAL DOMAIN MODEL
+- Identify all business entities (nouns)
+- Define attributes for each entity
+- Establish relationships with multiplicities
+- Identify aggregations and compositions
+- Note inheritance hierarchies if any
+- Output: PlantUML class diagram
+
+2. BUSINESS VOCABULARY/GLOSSARY
+For each domain term:
+- Term name
+- Definition
+- Synonyms
+- Usage context
+- Related terms
+
+3. BUSINESS RULES CATALOG
+For each rule provide:
+- Rule ID (BR-XXX)
+- Rule Name
+- Category (Validation/Calculation/Constraint/Derivation)
+- Description
+- Implementation Notes
+- Source/Authority
+- Examples
+- Exceptions
+
+4. ENTITY DESCRIPTIONS
+For each major entity:
+- Entity name
+- Business meaning
+- Key attributes and their meanings
+- Lifecycle (creation to deletion)
+- Business constraints
+- Relationships explained
+
+5. DOMAIN CONSTRAINTS
+- Invariants that must always be true
+- Cross-entity constraints
+- Temporal constraints
+- Business process constraints
+
+Format as structured documentation with clear sections.
+```
+
+## Prompt 3: Non-Functional Requirements and System Scope
+
+```
+You are a systems architect specializing in requirements engineering. Define comprehensive non-functional requirements and system scope:
+
+System: [SYSTEM_NAME]
+Type: [SYSTEM_TYPE]
+Stakeholders: [STAKEHOLDER_LIST]
+Deployment Context: [DEPLOYMENT_CONTEXT]
+Expected Scale: [SCALE_METRICS]
+
+Generate:
+
+1. NON-FUNCTIONAL REQUIREMENTS SPECIFICATION
+
+Performance Requirements:
+- Response time (by operation type)
+- Throughput requirements
+- Resource utilization limits
+- Batch processing windows
+
+Scalability Requirements:
+- User load (concurrent/total)
+- Data volume growth
+- Geographic distribution
+- Scaling strategy
+
+Security Requirements:
+- Authentication mechanisms
+- Authorization levels
+- Data encryption needs
+- Audit requirements
+- Compliance standards
+
+Reliability Requirements:
+- Availability targets (uptime %)
+- Mean time between failures
+- Mean time to repair
+- Disaster recovery
+- Backup requirements
+
+Usability Requirements:
+- User interface standards
+- Accessibility requirements
+- Training needs
+- Documentation standards
+- Internationalization
+
+Compatibility Requirements:
+- Browser/device support
+- Integration requirements
+- Data exchange formats
+- Legacy system support
+
+For each requirement provide:
+- ID (NFR-XXX)
+- Category
+- Description
+- Measurable criteria
+- Priority (Critical/High/Medium/Low)
+- Verification method
+
+2. SYSTEM SCOPE DEFINITION
+- In-scope features (detailed list)
+- Out-of-scope items (explicitly excluded)
+- System boundaries
+- External interfaces
+- Assumptions
+- Dependencies
+- Constraints
+
+3. REQUIREMENTS TRACEABILITY MATRIX
+Create initial matrix structure showing:
+- Requirement ID
+- Type (Functional/Non-functional)
+- Source (stakeholder/document)
+- Priority
+- Related use cases
+- Verification criteria
+
+Format as structured specification document with clear categorization.
+```

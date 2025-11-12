@@ -1,0 +1,75 @@
+title: Repository: mlc-ai/web-llm-chat
+created: 2025-06-28T03:19:33.576Z
+modified: 2025-06-28T03:19:33.576Z
+tags: Repository Analysis WebLLM [[Browser AI]] TypeScript React
+type: text/vnd.tiddlywiki
+
+!! Repository: mlc-ai/web-llm-chat
+
+!!! Overview
+Browser-native AI chat interface using WebGPU for local LLM execution. Zero server dependencies, complete privacy.
+
+!!! Technical Specifications
+
+||!Metric ||!Value ||
+|**Repository URL** |https://github.com/mlc-ai/web-llm-chat |
+|**Total Files** |10 |
+|**Languages** |TypeScript (9), JavaScript (1) |
+|**Code Chunks** |57 |
+|**Analysis Status** |✅ Complete |
+|**Local Path** |workspace/mlc-ai/web-llm-chat |
+
+!!! Architecture Analysis
+
+!!!! Core Files Structure
+
+* `app/constant.ts` - 1,565 lines, complexity 0.38
+** Model configurations for 100+ AI models
+** Support for Llama, Phi, Mistral, Gemma, Qwen families
+** Comprehensive temperature/parameter settings
+
+* `app/utils.ts` - 305 lines, complexity 7.54
+** Image compression and processing
+** UI utilities and responsive design
+** Clipboard and file operations
+
+* `app/context.ts` - 8 lines, complexity 0.0
+** React context definitions
+** WebLLM and MLC-LLM API management
+
+!!!! Design Patterns Identified
+
+# **Context Provider Pattern** - Global state management through React contexts
+# **Configuration Pattern** - Centralized model definitions and constants
+# **Utility Pattern** - Stateless helper functions for common operations
+# **Import/Export Pattern** - Modular dependency management
+
+!!!! Key Technologies
+
+* **Frontend**: React + TypeScript
+* **AI Engine**: @mlc-ai/web-llm library
+* **Hardware Acceleration**: WebGPU
+* **Architecture**: Context-based state management
+
+!!! Model Support
+
+The repository supports 100+ pre-configured AI models including:
+* Llama 3.1/3.2 variants (1B, 3B, 8B parameters)
+* Phi 3.5 vision and mini models
+* Mistral 7B instruction models
+* Gemma 2B/9B models
+* Qwen 2.5 and Qwen3 variants
+* DeepSeek R1 distilled models
+
+!!! Code Quality Metrics
+
+* **Overall Complexity**: Moderate (highest: 7.54 in utils)
+* **Type Safety**: Full TypeScript coverage
+* **Modularity**: Well-separated concerns
+* **Documentation**: Basic inline comments
+
+!!! Related Tiddlers
+
+* [[Code Analysis - Repository Analysis Results]]
+* [[WebGPU Technology]]
+* [[Browser-Native AI]]

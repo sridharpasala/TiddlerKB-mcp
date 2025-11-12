@@ -1,0 +1,81 @@
+title: MCP Tools - Performance Assessment
+created: 2025-06-28T03:20:10.060Z
+modified: 2025-06-28T03:20:10.060Z
+tags: [[MCP Tools]] Performance Evaluation Testing [[Tool Assessment]]
+type: text/vnd.tiddlywiki
+
+!! MCP Tools - Performance Assessment
+
+!!! Testing Overview
+Comprehensive evaluation of Model Context Protocol (MCP) repository analysis tools using two diverse GitHub repositories.
+
+!!! Tool Performance Matrix
+
+||!Tool ||!Status ||!Performance ||!Notes ||
+|`add_github_repository` |✅ Working |Excellent |Reliable repository registration |
+|`analyze_github_repository` |✅ Working |Excellent |Complete code analysis & parsing |
+|`extract_code_structure` |✅ Working |Excellent |Detailed file structure extraction |
+|`get_repository_status` |✅ Working |Good |Comprehensive status reporting |
+|`list_repositories` |✅ Working |Good |Clear repository management |
+|`remove_repository` |✅ Working |Good |Clean repository removal |
+|`find_similar_code` |❌ Not Implemented |N/A |Returns "not yet implemented" |
+|`analyze_dependencies` |⚠️ Limited |Basic |Limited functionality available |
+|`generate_oose_artifacts` |⚠️ Limited |Basic |Produces basic artifacts only |
+
+!!! Successful Operations
+
+!!!! Repository Management
+* ✅ Added 2 repositories successfully
+* ✅ Analyzed 20 total files (10 each)
+* ✅ Generated 93 code chunks total
+* ✅ Detected multiple programming languages
+
+!!!! Code Analysis
+* ✅ TypeScript parsing (mlc-ai repo)
+* ✅ JavaScript parsing (both repos)
+* ✅ Python parsing (microsoft repo)
+* ✅ Import/export detection
+* ✅ Complexity scoring
+* ✅ File hash generation
+
+!!!! Structure Extraction
+* ✅ Multi-language support
+* ✅ Chunk segmentation
+* ✅ Metadata extraction
+* ✅ Embedding support (optional)
+
+!!! Areas for Improvement
+
+!!!! Missing Functionality
+* `find_similar_code` - Critical for code pattern analysis
+* Enhanced `analyze_dependencies` - Limited dependency graph creation
+* Improved `generate_oose_artifacts` - More comprehensive OOSE generation
+
+!!!! Performance Optimizations
+* Better error handling for private repositories
+* Enhanced design pattern detection
+* More detailed architectural analysis
+* Improved semantic relationship mapping
+
+!!! Technical Performance
+
+||!Metric ||!mlc-ai/web-llm-chat ||!microsoft/copilot-camp ||
+|**Files Processed** |10 |10 |
+|**Languages Detected** |2 |2 |
+|**Chunks Generated** |57 |36 |
+|**Complexity Range** |0.0 - 30.9 |8.8 - 21.1 |
+|**Analysis Time** |~2 minutes |~1 minute |
+
+!!! Recommendations
+
+# **Implement Missing Tools** - Prioritize `find_similar_code` functionality
+# **Enhance OOSE Generation** - More detailed artifacts and use cases
+# **Improve Dependency Analysis** - Complete dependency graph creation
+# **Add Pattern Detection** - Automated design pattern identification
+# **Semantic Analysis** - Code similarity and relationship mapping
+
+!!! Related Tiddlers
+
+* [[Code Analysis - Repository Analysis Results]]
+* [[MCP Technology]]
+* [[Software Analysis Tools]]

@@ -1,0 +1,207 @@
+title: OOSE AI Prompt Customization Guide
+created: 2025-07-09T10:45:28.195Z
+modified: 2025-07-09T10:45:28.195Z
+tags: OOSE [[AI Prompts]] Customization Templates
+type: text/vnd.tiddlywiki
+
+# OOSE AI Prompt Customization Guide
+
+## Customization Variables
+
+When using the AI prompts, replace these placeholders with your project-specific information:
+
+### Project Context Variables
+- `[SYSTEM_NAME]` - Your system's name
+- `[SYSTEM_DESCRIPTION]` - Brief description of what the system does
+- `[SYSTEM_TYPE]` - Web/Mobile/Desktop/Embedded/Distributed
+- `[DOMAIN_NAME]` - Business domain (e.g., Healthcare, Finance, E-commerce)
+- `[DOMAIN_DESCRIPTION]` - Detailed domain context
+
+### Technical Stack Variables
+- `[LANGUAGE]` - Programming language (Java, Python, C#, JavaScript, etc.)
+- `[FRAMEWORK]` - Framework choice (Spring Boot, Django, .NET Core, etc.)
+- `[DATABASE_TYPE]` - MySQL, PostgreSQL, MongoDB, Oracle, etc.
+- `[ARCHITECTURE_PATTERN]` - MVC, MVVM, Microservices, Layered, etc.
+- `[DEPLOYMENT_ENVIRONMENT]` - AWS, Azure, GCP, On-premise, Kubernetes
+
+### Quality and Standards Variables
+- `[CODING_STANDARDS]` - Your team's coding standards reference
+- `[COVERAGE_TARGET]` - Test coverage percentage (e.g., 80%)
+- `[PERFORMANCE_REQUIREMENTS]` - Response time, throughput needs
+- `[SECURITY_REQUIREMENTS]` - Authentication, encryption standards
+
+## Prompt Enhancement Strategies
+
+### 1. Add Domain-Specific Context
+
+**Basic Prompt:**
+```
+Generate a domain model for: [DOMAIN_NAME]
+```
+
+**Enhanced Domain-Specific Prompt:**
+```
+Generate a domain model for a healthcare system focusing on:
+- Patient records management
+- HIPAA compliance requirements
+- Integration with medical devices
+- Insurance claim processing
+
+Consider healthcare-specific constraints:
+- Patient privacy regulations
+- Medical terminology standards (ICD-10, CPT)
+- Audit trail requirements
+- Emergency access procedures
+```
+
+### 2. Include Technology Constraints
+
+**Basic Prompt:**
+```
+Implement the following design class in [LANGUAGE]
+```
+
+**Enhanced Technology-Specific Prompt:**
+```
+Implement the following design class in Java 17:
+- Use Spring Boot 3.0 annotations
+- Follow REST API best practices
+- Include OpenAPI documentation
+- Use Lombok for boilerplate reduction
+- Implement proper logging with SLF4J
+- Add Spring Security for method-level authorization
+- Include validation annotations
+```
+
+### 3. Add Industry Standards
+
+**For Financial Systems:**
+```
+Additional requirements:
+- PCI-DSS compliance for payment handling
+- SOX compliance for audit trails
+- Double-entry bookkeeping principles
+- Currency handling with precision
+```
+
+**For Healthcare Systems:**
+```
+Additional requirements:
+- HIPAA compliance for data protection
+- HL7/FHIR standards for interoperability
+- Medical device integration standards
+- Clinical decision support considerations
+```
+
+### 4. Specify Output Format Preferences
+
+**Structured Output Request:**
+```
+Format the output as:
+1. JSON schema for API contracts
+2. Markdown documentation with examples
+3. Executable test scripts
+4. Docker-compose configuration
+5. CI/CD pipeline configuration (GitHub Actions)
+```
+
+## Advanced Prompt Patterns
+
+### 1. Few-Shot Learning Pattern
+
+```
+Here are examples of well-designed use cases for similar systems:
+
+Example 1: [E-commerce checkout use case]
+Example 2: [Banking transfer use case]
+
+Now generate a use case for: [Your specific scenario]
+Following the same quality and detail level.
+```
+
+### 2. Chain-of-Thought Pattern
+
+```
+For the complex business rule implementation:
+1. First, identify all the business constraints
+2. Then, determine the validation sequence
+3. Next, design the error handling strategy
+4. Finally, implement the complete solution
+
+Business Rule: [Your complex rule]
+```
+
+### 3. Iterative Refinement Pattern
+
+```
+Initial Request: Generate a basic class structure
+Refinement 1: Add error handling and validation
+Refinement 2: Include logging and monitoring
+Refinement 3: Add performance optimizations
+Refinement 4: Include security measures
+```
+
+## Project-Specific Templates
+
+### For Microservices Projects
+
+```
+When generating artifacts, consider:
+- Service boundaries and data ownership
+- Inter-service communication patterns
+- Distributed transaction handling
+- Service discovery and registry
+- Circuit breaker and retry patterns
+- Centralized configuration management
+- Distributed logging and tracing
+```
+
+### For Legacy Modernization
+
+```
+When analyzing the existing system:
+- Identify technical debt areas
+- Propose incremental migration strategy
+- Maintain backward compatibility
+- Design adapter patterns for integration
+- Plan for data migration
+- Consider strangler fig pattern
+```
+
+### For Real-time Systems
+
+```
+Additional considerations:
+- Response time guarantees
+- Event-driven architecture
+- Message queuing strategies
+- Caching strategies
+- WebSocket or SSE for updates
+- Optimistic locking patterns
+```
+
+## Validation Checklist
+
+After generating artifacts using customized prompts:
+
+- [ ] Domain terminology is correctly used
+- [ ] Technical constraints are satisfied
+- [ ] Industry standards are followed
+- [ ] Output format matches requirements
+- [ ] Integration points are well-defined
+- [ ] Non-functional requirements are addressed
+- [ ] Security considerations are included
+- [ ] Performance requirements are met
+- [ ] Scalability is considered
+- [ ] Maintainability is ensured
+
+## Tips for Effective Customization
+
+1. **Start Simple**: Begin with basic prompts and add complexity gradually
+2. **Maintain Context**: Keep a running document of all project-specific customizations
+3. **Create Reusable Templates**: Build a library of prompts for common scenarios
+4. **Version Control**: Track prompt evolution with your project
+5. **Team Alignment**: Ensure all team members use consistent prompt patterns
+6. **Continuous Improvement**: Refine prompts based on output quality
+
+Remember: The more specific and contextual your prompts, the better the AI-generated artifacts will align with your project needs.

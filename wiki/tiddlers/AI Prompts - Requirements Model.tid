@@ -1,0 +1,117 @@
+title: AI Prompts - Requirements Model
+created: 2025-07-09T10:41:34.061Z
+modified: 2025-07-09T10:41:34.061Z
+tags: OOSE [[AI Prompts]] [[Requirements Model]] Templates
+type: text/vnd.tiddlywiki
+
+# AI Prompts for Requirements Model Generation
+
+## 1. Use Case Diagram Generation
+
+```
+You are an expert business analyst. Generate a Use Case diagram for the following system:
+
+System Description: [SYSTEM_DESCRIPTION]
+Key Stakeholders: [STAKEHOLDER_LIST]
+Primary Goals: [BUSINESS_GOALS]
+
+Please identify:
+1. All actors (primary, secondary, and external systems)
+2. Main use cases (10-15 for a medium system)
+3. Include/extend relationships
+4. System boundary
+
+Output format: PlantUML code for the use case diagram
+```
+
+## 2. Use Case Specification
+
+```
+You are a requirements analyst. Create a detailed use case specification for:
+
+Use Case Name: [USE_CASE_NAME]
+Context: [SYSTEM_CONTEXT]
+Actor: [PRIMARY_ACTOR]
+
+Generate:
+1. Use Case ID (UC-XXX format)
+2. Brief description (2-3 sentences)
+3. Pre-conditions
+4. Main flow (numbered steps)
+5. Alternative flows (at least 2)
+6. Exception flows
+7. Post-conditions
+8. Business rules
+9. Non-functional requirements
+10. Frequency of use
+
+Follow the standard use case template format.
+```
+
+## 3. Domain Model Generation
+
+```
+You are a domain modeling expert. Create a conceptual domain model for:
+
+Domain: [DOMAIN_NAME]
+Description: [DOMAIN_DESCRIPTION]
+Key Business Processes: [PROCESS_LIST]
+
+Identify:
+1. Core domain entities (nouns from the description)
+2. Attributes for each entity
+3. Relationships between entities (with multiplicities)
+4. Key business constraints
+
+Output: 
+- List of entities with descriptions
+- PlantUML class diagram showing relationships
+- Business rules that govern the domain
+```
+
+## 4. Actor Catalog
+
+```
+Generate a comprehensive actor catalog for the system:
+
+System: [SYSTEM_NAME]
+Use Cases Identified: [USE_CASE_LIST]
+
+For each actor provide:
+1. Actor name
+2. Actor type (Primary/Secondary/External System)
+3. Description (role and responsibilities)
+4. Goals/objectives
+5. Use cases they participate in
+6. Special requirements or constraints
+
+Format as a structured table or JSON.
+```
+
+## 5. Non-Functional Requirements
+
+```
+You are a systems architect. Define non-functional requirements for:
+
+System: [SYSTEM_NAME]
+Type: [SYSTEM_TYPE]
+Expected Users: [USER_COUNT]
+Deployment Environment: [ENVIRONMENT]
+
+Generate requirements for:
+1. Performance (response time, throughput)
+2. Scalability (concurrent users, data volume)
+3. Security (authentication, authorization, data protection)
+4. Reliability (uptime, failure recovery)
+5. Usability (user experience standards)
+6. Compatibility (browsers, devices, integrations)
+7. Maintainability (coding standards, documentation)
+8. Regulatory compliance
+
+For each requirement, provide:
+- ID (NFR-XXX)
+- Category
+- Description
+- Measurable criteria
+- Priority (High/Medium/Low)
+```

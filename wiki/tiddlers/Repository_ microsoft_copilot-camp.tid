@@ -1,0 +1,90 @@
+title: Repository: microsoft/copilot-camp
+created: 2025-06-28T03:19:51.306Z
+modified: 2025-06-28T03:19:51.306Z
+tags: Repository Analysis Microsoft Copilot Documentation Python JavaScript
+type: text/vnd.tiddlywiki
+
+!! Repository: microsoft/copilot-camp
+
+!!! Overview
+Educational repository for Microsoft Copilot development training with interactive labs, progress tracking, and multilingual documentation support.
+
+!!! Technical Specifications
+
+||!Metric ||!Value ||
+|**Repository URL** |https://github.com/microsoft/copilot-camp |
+|**Total Files** |10 |
+|**Languages** |JavaScript (9), Python (1) |
+|**Code Chunks** |36 |
+|**Analysis Status** |✅ Complete |
+|**Local Path** |workspace/microsoft/copilot-camp |
+
+!!! Architecture Analysis
+
+!!!! Core Components
+
+* `docs/scripts/translate-docs.py` - 327 lines, complexity 21.1
+** Azure OpenAI-powered documentation translation
+** Multi-language support (Japanese implemented)
+** Markdown processing with code block preservation
+** Concurrent translation processing
+
+* `docs/javascripts/cc-award.js` - 253 lines, complexity 15.0
+** Web component for badge/award system
+** Lab completion tracking
+** Progress persistence via localStorage
+** Telemetry integration
+
+* `docs/javascripts/cc-lab-step.js` - 299 lines, complexity 11.7
+** Interactive step tracking components
+** Dynamic table of contents generation
+** Progress visualization
+** Custom HTML elements
+
+!!!! Key Features
+
+# **Educational Lab System** - Step-by-step guided learning
+# **Progress Tracking** - Persistent completion status
+# **Multilingual Documentation** - AI-powered translation
+# **Interactive UI Components** - Web components for enhanced UX
+# **Award System** - Gamified learning experience
+
+!!!! Technology Stack
+
+* **Backend Automation**: Python with Azure OpenAI
+* **Frontend**: Vanilla JavaScript with Web Components
+* **Documentation**: MkDocs with custom extensions
+* **Translation**: Azure OpenAI GPT models
+* **Persistence**: Browser localStorage
+
+!!! Translation System
+
+The Python translation script provides:
+* **Source Language**: English
+* **Target Languages**: Japanese (with framework for others)
+* **Preservation**: Code blocks, URLs, and technical terms
+* **Quality**: Temperature=1 for natural translation
+* **Chunking**: 120-line segments for optimal processing
+
+!!! Web Components
+
+Custom elements created:
+* `<cc-award>` - Badge claiming interface
+* `<cc-end-step>` - Step completion tracking
+* `<cc-last-completed-step>` - Progress indicator
+* `<cc-table-of-contents>` - Dynamic navigation
+* `<cc-next>` - Sequential navigation
+
+!!! Code Quality Assessment
+
+* **Complexity Range**: 8.8 - 21.1 (Python script highest)
+* **Architecture**: Modular web components
+* **Documentation**: Comprehensive inline comments
+* **Error Handling**: Try-catch blocks and graceful degradation
+
+!!! Related Tiddlers
+
+* [[Code Analysis - Repository Analysis Results]]
+* [[Web Components Technology]]
+* [[Azure OpenAI Integration]]
+* [[Educational Technology]]

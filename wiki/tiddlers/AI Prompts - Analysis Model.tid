@@ -1,0 +1,144 @@
+title: AI Prompts - Analysis Model
+created: 2025-07-09T10:42:00.406Z
+modified: 2025-07-09T10:42:00.406Z
+tags: OOSE [[AI Prompts]] [[Analysis Model]] Templates
+type: text/vnd.tiddlywiki
+
+# AI Prompts for Analysis Model Generation
+
+## 1. Boundary Class Identification
+
+```
+You are an OOSE analysis expert. Identify boundary classes for the following system:
+
+Use Cases: [USE_CASE_LIST]
+Actors: [ACTOR_LIST]
+System Type: [WEB/MOBILE/DESKTOP]
+
+For each use case:
+1. Identify all boundary classes (interfaces between actors and system)
+2. Name them using pattern: [Purpose]UI or [Purpose]Interface
+3. List responsibilities of each boundary class
+4. Identify which actor interacts with which boundary class
+
+Output format:
+- Boundary Class Name
+- Type (GUI/API/Device Interface)
+- Responsible for
+- Interacts with Actor(s)
+- Related Use Case(s)
+```
+
+## 2. Control Class Generation
+
+```
+Analyze the following use cases and generate control classes:
+
+Use Case Specifications: [USE_CASE_DETAILS]
+
+For each use case:
+1. Create one control class (named [UseCaseName]Controller)
+2. Define its coordination responsibilities
+3. List the boundary and entity classes it coordinates
+4. Describe the main flow it orchestrates
+
+Include:
+- Control Class Name
+- Primary Responsibility
+- Coordinated Classes
+- Key Operations/Methods
+- Business Logic Rules enforced
+```
+
+## 3. Entity Class Extraction
+
+```
+Based on the domain model, create entity classes:
+
+Domain Model: [DOMAIN_MODEL]
+Business Rules: [BUSINESS_RULES]
+
+For each domain concept:
+1. Create an entity class
+2. Define core attributes (only domain-relevant)
+3. Identify key behaviors/responsibilities
+4. Note persistence requirements
+5. Define invariants and constraints
+
+Output:
+- Entity Class Name
+- Description
+- Key Attributes
+- Core Responsibilities
+- Business Rules/Invariants
+- Relationships to other entities
+```
+
+## 4. Sequence Diagram Generation
+
+```
+Create a sequence diagram for the following use case:
+
+Use Case: [USE_CASE_NAME]
+Main Flow: [MAIN_FLOW_STEPS]
+Participating Classes:
+- Boundary: [BOUNDARY_CLASSES]
+- Control: [CONTROL_CLASS]
+- Entity: [ENTITY_CLASSES]
+
+Generate:
+1. Actor initiating the sequence
+2. Message flows between objects
+3. Object lifelines
+4. Activation bars
+5. Return messages
+6. Any loops or conditions
+
+Output: PlantUML sequence diagram code with clear message names
+```
+
+## 5. Class Diagram for Analysis Model
+
+```
+Create an analysis class diagram showing relationships:
+
+Boundary Classes: [BOUNDARY_LIST]
+Control Classes: [CONTROL_LIST]
+Entity Classes: [ENTITY_LIST]
+Use Case: [USE_CASE_CONTEXT]
+
+Show:
+1. All three types of classes (use stereotypes)
+2. Associations with multiplicities
+3. Dependencies
+4. Key attributes for entity classes
+5. Main operations for each class type
+
+Guidelines:
+- Boundary classes don't directly access entity classes
+- Control classes coordinate between boundary and entity
+- Entity classes can associate with each other
+
+Output: PlantUML class diagram following OOSE notation
+```
+
+## 6. State Diagram Generation
+
+```
+Create a state diagram for the following entity class:
+
+Entity Class: [CLASS_NAME]
+Class Description: [DESCRIPTION]
+Business Rules: [RELEVANT_RULES]
+Key Operations: [OPERATIONS_LIST]
+
+Identify:
+1. All possible states
+2. Transitions between states
+3. Events triggering transitions
+4. Guards/conditions
+5. Entry/exit actions
+6. Initial and final states
+
+Output: PlantUML state diagram with clear state names and transitions
+```

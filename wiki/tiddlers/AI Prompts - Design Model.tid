@@ -1,0 +1,160 @@
+title: AI Prompts - Design Model
+created: 2025-07-09T10:42:26.942Z
+modified: 2025-07-09T10:42:26.942Z
+tags: OOSE [[AI Prompts]] [[Design Model]] Templates
+type: text/vnd.tiddlywiki
+
+# AI Prompts for Design Model Generation
+
+## 1. Design Class Refinement
+
+```
+You are a software architect. Refine the following analysis classes into design classes:
+
+Analysis Classes: [ANALYSIS_CLASS_LIST]
+Target Technology: [JAVA/C#/PYTHON/etc]
+Architecture Pattern: [MVC/MVVM/LAYERED/etc]
+Framework: [SPRING/DOTNET/DJANGO/etc]
+
+For each analysis class:
+1. Add implementation-specific attributes (with types)
+2. Define complete method signatures
+3. Specify visibility (public/private/protected)
+4. Add constructor requirements
+5. Include framework-specific annotations/decorators
+6. Define properties/getters/setters as needed
+
+Output format:
+- Design Class Name
+- Package/Namespace
+- Inheritance/Interfaces
+- Attributes (with types and visibility)
+- Methods (with parameters, return types, visibility)
+- Dependencies
+```
+
+## 2. Database Schema Design
+
+```
+Create a relational database schema from entity classes:
+
+Entity Classes: [ENTITY_CLASS_LIST]
+Database Type: [MySQL/PostgreSQL/Oracle/SQLServer]
+Performance Requirements: [REQUIREMENTS]
+
+Generate:
+1. Tables for each entity (with naming convention)
+2. Primary keys (natural or surrogate)
+3. Foreign keys for relationships
+4. Indexes for performance
+5. Constraints (unique, check, not null)
+6. Audit columns (created_at, updated_at, etc.)
+
+Output:
+- DDL scripts for table creation
+- Explanation of design decisions
+- Denormalization choices (if any)
+- Index strategy
+```
+
+## 3. API Interface Design
+
+```
+Design RESTful API interfaces for the system:
+
+Use Cases: [USE_CASE_LIST]
+Boundary Classes: [BOUNDARY_CLASS_LIST]
+Entity Classes: [ENTITY_CLASS_LIST]
+
+For each resource:
+1. Define endpoints (GET, POST, PUT, DELETE)
+2. URL patterns following REST conventions
+3. Request/Response DTOs
+4. HTTP status codes
+5. Authentication/Authorization requirements
+6. Rate limiting considerations
+7. Versioning strategy
+
+Output:
+- OpenAPI/Swagger specification
+- Example requests/responses
+- Error response format
+- Security considerations
+```
+
+## 4. Component Architecture
+
+```
+Design the component architecture:
+
+System Name: [SYSTEM_NAME]
+Design Classes: [DESIGN_CLASS_LIST]
+Deployment Environment: [CLOUD/ON-PREMISE]
+Architecture Style: [MICROSERVICES/MONOLITH/MODULAR]
+
+Define:
+1. Components/Services breakdown
+2. Component interfaces
+3. Inter-component communication
+4. Data flow between components
+5. External system integrations
+6. Shared libraries/utilities
+
+Output:
+- Component diagram (PlantUML)
+- Component descriptions
+- Interface specifications
+- Dependency management strategy
+```
+
+## 5. Design Pattern Application
+
+```
+Apply appropriate design patterns to the following scenarios:
+
+Scenarios:
+[SCENARIO_1]: [DESCRIPTION]
+[SCENARIO_2]: [DESCRIPTION]
+[SCENARIO_3]: [DESCRIPTION]
+
+For each scenario:
+1. Identify applicable design pattern(s)
+2. Justify the pattern selection
+3. Show pattern implementation with classes
+4. Define participant roles
+5. Provide code structure example
+
+Consider patterns like:
+- Creational: Factory, Builder, Singleton
+- Structural: Adapter, Facade, Decorator
+- Behavioral: Strategy, Observer, Template Method
+
+Output: Pattern name, justification, and implementation approach
+```
+
+## 6. Deployment Architecture
+
+```
+Create a deployment architecture for:
+
+System: [SYSTEM_NAME]
+Components: [COMPONENT_LIST]
+Expected Load: [LOAD_SPECIFICATIONS]
+Environment: [AWS/AZURE/GCP/ON-PREMISE]
+
+Design:
+1. Server/container specifications
+2. Load balancing strategy
+3. Database deployment (replication, sharding)
+4. Caching layers
+5. CDN configuration
+6. Security zones (DMZ, internal network)
+7. Monitoring and logging infrastructure
+8. Backup and disaster recovery
+
+Output:
+- Deployment diagram (PlantUML)
+- Infrastructure specifications
+- Scaling strategy
+- Security considerations
+```

@@ -1,0 +1,180 @@
+title: AI Prompts - Implementation Model
+created: 2025-07-09T10:42:55.584Z
+modified: 2025-07-09T10:42:55.584Z
+tags: OOSE [[AI Prompts]] [[Implementation Model]] Templates
+type: text/vnd.tiddlywiki
+
+# AI Prompts for Implementation Model Generation
+
+## 1. Class Implementation
+
+```
+Implement the following design class:
+
+Design Class Specification:
+- Class Name: [CLASS_NAME]
+- Package: [PACKAGE_NAME]
+- Attributes: [ATTRIBUTE_LIST]
+- Methods: [METHOD_SIGNATURES]
+- Business Rules: [RULES]
+- Design Pattern: [PATTERN_IF_ANY]
+
+Technology Stack: [LANGUAGE/FRAMEWORK]
+Coding Standards: [STANDARDS_REFERENCE]
+
+Generate:
+1. Complete class implementation
+2. Constructor(s)
+3. All methods with business logic
+4. Input validation
+5. Error handling
+6. Logging statements
+7. Comments and documentation
+8. Unit test stubs
+
+Follow best practices for the chosen technology.
+```
+
+## 2. Database Implementation Scripts
+
+```
+Create database implementation scripts:
+
+Database Schema: [SCHEMA_DEFINITION]
+Database Type: [DATABASE_TYPE]
+Environment: [DEV/TEST/PROD]
+
+Generate:
+1. CREATE TABLE statements
+2. Indexes and constraints
+3. Stored procedures/functions (if applicable)
+4. Triggers for audit trails
+5. Initial seed data
+6. Migration scripts
+7. Rollback scripts
+
+Include:
+- Performance optimizations
+- Partitioning strategy (if needed)
+- Security configurations
+- Database-specific features
+```
+
+## 3. API Endpoint Implementation
+
+```
+Implement REST API endpoints:
+
+API Specification: [OPENAPI_SPEC]
+Framework: [SPRING_BOOT/EXPRESS/FASTAPI/etc]
+Design Class: [CONTROLLER_CLASS]
+Service Classes: [SERVICE_CLASSES]
+
+For each endpoint generate:
+1. Controller/Route implementation
+2. Request validation
+3. Service layer calls
+4. Error handling
+5. Response formatting
+6. Authentication/Authorization checks
+7. Logging and monitoring hooks
+8. API documentation annotations
+
+Include proper HTTP status codes and error responses.
+```
+
+## 4. Configuration Management
+
+```
+Create configuration files for the application:
+
+Application: [APP_NAME]
+Environments: [DEV/TEST/STAGING/PROD]
+Components: [COMPONENT_LIST]
+External Services: [SERVICE_LIST]
+
+Generate:
+1. Application configuration files
+2. Environment-specific settings
+3. Database connection configs
+4. API keys and secrets (templated)
+5. Logging configurations
+6. Security settings
+7. Feature flags
+8. Container configurations (if applicable)
+
+Use appropriate format: [YAML/JSON/Properties/XML]
+```
+
+## 5. Build and Deployment Scripts
+
+```
+Create build and deployment automation:
+
+Project Type: [PROJECT_TYPE]
+Build Tool: [MAVEN/GRADLE/NPM/etc]
+Target Environment: [ENVIRONMENT]
+CI/CD Platform: [JENKINS/GITHUB_ACTIONS/GITLAB/etc]
+
+Generate:
+1. Build configuration file
+2. Dependency management
+3. Build scripts
+4. Test execution commands
+5. Packaging instructions
+6. Deployment scripts
+7. Environment setup scripts
+8. Health check implementations
+
+Include:
+- Version management
+- Artifact publishing
+- Rollback procedures
+```
+
+## 6. Integration Implementation
+
+```
+Implement integration with external systems:
+
+External System: [SYSTEM_NAME]
+Integration Type: [REST/SOAP/MESSAGE_QUEUE/DATABASE]
+Design Specifications: [INTEGRATION_DESIGN]
+
+Generate:
+1. Client/Connector implementation
+2. Data mapping/transformation
+3. Error handling and retry logic
+4. Circuit breaker pattern (if applicable)
+5. Monitoring and alerting
+6. Mock implementations for testing
+7. Configuration for different environments
+
+Include:
+- Timeout configurations
+- Connection pooling
+- Security implementations
+- Logging of all interactions
+```
+
+## 7. Cross-Cutting Concerns
+
+```
+Implement cross-cutting concerns:
+
+Application: [APP_NAME]
+Concerns: [LOGGING/SECURITY/CACHING/MONITORING]
+Framework: [FRAMEWORK]
+
+Generate implementations for:
+1. Logging framework setup and patterns
+2. Security filters/interceptors
+3. Caching layer implementation
+4. Performance monitoring
+5. Error tracking
+6. Audit trail implementation
+7. Transaction management
+8. Validation framework
+
+Ensure minimal coupling with business logic.
+```

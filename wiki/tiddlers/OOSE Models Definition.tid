@@ -1,0 +1,100 @@
+title: OOSE Models Definition
+created: 2025-07-09T10:41:10.737Z
+modified: 2025-07-09T10:41:10.737Z
+tags: OOSE Models [[Software Engineering]] Documentation
+type: text/vnd.tiddlywiki
+
+# OOSE Models Definition
+
+## 1. Requirements Model
+
+The Requirements Model captures **what** the system should do from a user's perspective.
+
+### Components:
+- **Use Case Diagram**: Shows actors and their interactions with the system
+- **Use Case Specifications**: Detailed descriptions including:
+  - Use case name and ID
+  - Actors involved
+  - Pre-conditions
+  - Main flow
+  - Alternative flows
+  - Post-conditions
+  - Business rules
+- **Actor Catalog**: List of all actors with descriptions
+- **Domain Model**: Conceptual classes and their relationships
+- **Glossary**: Key terms and definitions
+- **Non-functional Requirements**: Performance, security, usability constraints
+
+## 2. Analysis Model
+
+The Analysis Model provides a robust and changeable object structure, focusing on **what** the system does internally.
+
+### Components:
+- **Analysis Classes**: Three stereotypes:
+  - **Boundary Classes**: Handle interaction with actors
+  - **Control Classes**: Coordinate use case flows
+  - **Entity Classes**: Represent persistent domain information
+- **Class Diagrams**: Show relationships between analysis classes
+- **Interaction Diagrams**: 
+  - Sequence diagrams for each use case
+  - Collaboration diagrams showing object interactions
+- **State Diagrams**: For classes with significant state behavior
+- **Package Diagrams**: Logical grouping of related classes
+
+## 3. Design Model
+
+The Design Model refines the analysis model for a specific implementation environment, focusing on **how** the system will be built.
+
+### Components:
+- **Design Classes**: Refined from analysis classes with:
+  - Detailed attributes
+  - Method signatures
+  - Visibility modifiers
+  - Implementation-specific details
+- **Subsystem Design**: Architecture patterns and layers
+- **Interface Specifications**: APIs and contracts
+- **Database Schema**: Tables, relationships, indexes
+- **Deployment Diagram**: Hardware/software topology
+- **Component Diagram**: Physical packaging of classes
+- **Design Patterns Applied**: Specific patterns used and their implementation
+
+## 4. Implementation Model
+
+The Implementation Model is the actual code and related artifacts.
+
+### Components:
+- **Source Code**: Actual implementation files
+- **Build Scripts**: Compilation and packaging instructions
+- **Configuration Files**: Environment-specific settings
+- **Database Scripts**: DDL and DML scripts
+- **API Documentation**: Generated from code
+- **Code Comments**: Inline documentation
+- **Third-party Libraries**: Dependencies and versions
+
+## 5. Test Model
+
+The Test Model verifies that the system meets requirements and works correctly.
+
+### Components:
+- **Test Plan**: Overall testing strategy and schedule
+- **Test Cases**: Derived from use cases
+  - Unit test specifications
+  - Integration test scenarios
+  - System test procedures
+- **Test Scripts**: Automated test code
+- **Test Data**: Input data sets and expected results
+- **Defect Reports**: Issues found during testing
+- **Test Results**: Execution logs and coverage reports
+- **Traceability Matrix**: Links between requirements, design, code, and tests
+
+## Model Relationships
+
+```
+Requirements Model ──┐
+                    ├──> Design Model ──> Implementation Model
+Analysis Model ─────┘                            │
+                                                 │
+Test Model <─────────────────────────────────────┘
+```
+
+Each model builds upon previous models while maintaining traceability back to requirements.

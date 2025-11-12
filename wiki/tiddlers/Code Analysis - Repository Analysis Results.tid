@@ -1,0 +1,45 @@
+title: Code Analysis - Repository Analysis Results
+created: 2025-06-28T03:19:16.086Z
+modified: 2025-06-28T03:19:16.086Z
+tags: Analysis [[Code Analysis]] [[MCP Tools]] [[Repository Analysis]] [[Software Engineering]]
+type: text/vnd.tiddlywiki
+
+!! Repository Analysis Summary
+
+This tiddler contains comprehensive analysis results from testing MCP repository analysis tools on two GitHub repositories.
+
+!!! Analyzed Repositories
+
+# [[mlc-ai/web-llm-chat|Repository: mlc-ai/web-llm-chat]]
+# [[microsoft/copilot-camp|Repository: microsoft/copilot-camp]]
+
+!!! Analysis Overview
+
+||!Repository ||!Files ||!Languages ||!Chunks ||!Status ||
+|mlc-ai/web-llm-chat |10 |TypeScript (9), JavaScript (1) |57 |✅ Complete |
+|microsoft/copilot-camp |10 |JavaScript (9), Python (1) |36 |✅ Complete |
+
+!!! Tools Tested
+
+* ✅ `add_github_repository` - Successfully added repositories
+* ✅ `analyze_github_repository` - Comprehensive code analysis
+* ✅ `extract_code_structure` - Detailed file structure extraction
+* ✅ `get_repository_status` - Repository status monitoring
+* ❌ `find_similar_code` - Not yet implemented
+* ❌ `analyze_dependencies` - Basic functionality only
+* ⚠️ `generate_oose_artifacts` - Limited results
+
+!!! Key Findings
+
+The MCP repository analysis tools demonstrate strong capabilities for:
+* Repository cloning and file parsing
+* Multi-language code analysis (TypeScript, JavaScript, Python)
+* Code complexity scoring
+* Import/export dependency mapping
+* Chunk-based code segmentation
+
+!!! Related Analysis
+
+* [[Code Structure Analysis|Code Structure Analysis - Detailed Results]]
+* [[Tool Performance Evaluation|MCP Tools - Performance Assessment]]
+* [[Architecture Patterns|Software Architecture - Pattern Analysis]]

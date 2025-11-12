@@ -1,0 +1,192 @@
+title: OOSE AI Prompts - Practical Example
+created: 2025-07-09T10:44:45.245Z
+modified: 2025-07-09T10:44:45.245Z
+tags: OOSE [[AI Prompts]] Example [[Case Study]]
+type: text/vnd.tiddlywiki
+
+# OOSE AI Prompts - Practical Example
+
+## Case Study: Online Library Management System
+
+This example demonstrates how to use the AI prompts to generate OOSE artifacts for a simple Online Library Management System.
+
+### Starting Context
+
+```
+System Description: An online library management system that allows members to search, borrow, and return books. Librarians can manage inventory, and administrators handle user accounts and system settings.
+
+Key Features:
+- Book catalog browsing and searching
+- Member registration and authentication
+- Book borrowing and returning
+- Fine calculation for late returns
+- Inventory management
+- Reporting and analytics
+```
+
+### Stage 1: Analysis - Requirements Model
+
+#### Example Prompt Usage #1: Use Case Diagram
+
+**Input Prompt:**
+```
+You are an expert business analyst. Generate a Use Case diagram for the following system:
+
+System Description: An online library management system that allows members to search, borrow, and return books. Librarians can manage inventory, and administrators handle user accounts and system settings.
+
+Key Stakeholders: Library Members, Librarians, System Administrators
+Primary Goals: Facilitate book borrowing, Manage library inventory, Track member activities
+
+Please identify:
+1. All actors (primary, secondary, and external systems)
+2. Main use cases (10-15 for a medium system)
+3. Include/extend relationships
+4. System boundary
+
+Output format: PlantUML code for the use case diagram
+```
+
+**Expected Output Structure:**
+```plantuml
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Library Member" as Member
+actor "Librarian" as Librarian
+actor "Administrator" as Admin
+actor "Payment Gateway" as Payment
+
+rectangle "Library Management System" {
+  usecase "Search Books" as UC1
+  usecase "Borrow Book" as UC2
+  usecase "Return Book" as UC3
+  usecase "Pay Fine" as UC4
+  usecase "Manage Inventory" as UC5
+  usecase "Generate Reports" as UC6
+  usecase "Manage Users" as UC7
+  usecase "Register Member" as UC8
+  usecase "Authenticate" as UC9
+  
+  Member --> UC1
+  Member --> UC2
+  Member --> UC3
+  Member --> UC4
+  Member --> UC8
+  
+  UC2 ..> UC9 : <<include>>
+  UC3 ..> UC4 : <<extend>>
+  
+  Librarian --> UC5
+  Librarian --> UC6
+  Admin --> UC7
+  
+  UC4 --> Payment
+}
+@enduml
+```
+
+#### Example Prompt Usage #2: Domain Model
+
+**Input Prompt:**
+```
+You are a domain modeling expert. Create a conceptual domain model for:
+
+Domain: Library Management
+Description: A system managing books, members, borrowing transactions, fines, and library staff
+Key Business Processes: Member registration, Book cataloging, Borrowing/Returning, Fine management
+
+Identify:
+1. Core domain entities (nouns from the description)
+2. Attributes for each entity
+3. Relationships between entities (with multiplicities)
+4. Key business constraints
+
+Output: 
+- List of entities with descriptions
+- PlantUML class diagram showing relationships
+- Business rules that govern the domain
+```
+
+**Expected Output Structure:**
+```
+Entities:
+1. Book - Physical or digital book in library
+2. Member - Registered library user
+3. Loan - Borrowing transaction
+4. Fine - Penalty for late returns
+5. Author - Book creator
+6. Category - Book classification
+
+Business Rules:
+- A member can borrow maximum 5 books
+- Loan period is 14 days
+- Fine is $0.50 per day after due date
+- Books can have multiple authors
+```
+
+### Stage 1: Analysis - Analysis Model
+
+#### Example Prompt Usage #3: Boundary Classes
+
+**Input Prompt:**
+```
+You are an OOSE analysis expert. Identify boundary classes for the following system:
+
+Use Cases: Search Books, Borrow Book, Return Book, Manage Inventory
+Actors: Library Member, Librarian, Administrator
+System Type: WEB
+
+For each use case:
+1. Identify all boundary classes (interfaces between actors and system)
+2. Name them using pattern: [Purpose]UI or [Purpose]Interface
+3. List responsibilities of each boundary class
+4. Identify which actor interacts with which boundary class
+
+Output format:
+- Boundary Class Name
+- Type (GUI/API/Device Interface)
+- Responsible for
+- Interacts with Actor(s)
+- Related Use Case(s)
+```
+
+**Expected Output Structure:**
+```
+1. BookSearchUI
+   - Type: GUI
+   - Responsible for: Display search form, show search results, handle filters
+   - Interacts with: Library Member
+   - Related Use Cases: Search Books
+
+2. BorrowingUI
+   - Type: GUI
+   - Responsible for: Show borrowing form, display loan confirmation
+   - Interacts with: Library Member
+   - Related Use Cases: Borrow Book
+
+3. InventoryManagementUI
+   - Type: GUI
+   - Responsible for: CRUD operations for books, bulk operations
+   - Interacts with: Librarian
+   - Related Use Cases: Manage Inventory
+```
+
+### Using Output as Input for Next Phase
+
+The key to effective prompt chaining is using the output from one prompt as input for the next. For example:
+
+1. The **Use Case Diagram** output provides the list of use cases needed for the **Boundary Class Identification**
+2. The **Domain Model** entities become the basis for **Entity Class Extraction**
+3. The **Analysis Classes** are refined into **Design Classes** with implementation details
+
+### Traceability Example
+
+```
+Requirements Model          →  Analysis Model         →  Design Model
+Use Case: Borrow Book      →  BorrowBookController  →  BorrowBookService
+Actor: Library Member      →  BorrowingUI          →  BorrowingController
+Domain: Book, Loan        →  Book, Loan entities  →  BookDAO, LoanDAO
+```
+
+This systematic approach ensures complete coverage and maintains traceability throughout the development process.
